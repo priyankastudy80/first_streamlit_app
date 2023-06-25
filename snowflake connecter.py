@@ -10,4 +10,4 @@ conn = snowflake.connector.connect(
     warehouse='COMPUTE_WH'
     )
 
-connection.cursor().execute("put file://my_third_file.txt @demo_db.public.my_internal_named_stage")
+conn.cursor().execute("put file://my_third_file.txt @demo_db.public.my_internal_named_stage")
