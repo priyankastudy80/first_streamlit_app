@@ -1,4 +1,5 @@
 import snowflake.connector
+import os
 #conn = snow.connect() // you need to pass required account info and credentials here
 
 
