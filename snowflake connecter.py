@@ -5,7 +5,7 @@ import snowflake.connector
 conn = snowflake.connector.connect(
     user='pthakar',
     password='Newlearning@123',
-    account='BV83940',
+    account='XQ31534.ca-central-1.aws',
     warehouse='COMPUTE_WH'
     )
 
