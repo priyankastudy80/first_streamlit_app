@@ -41,10 +41,6 @@ try:
         back_from_function = get_fruityvice_data(fruit_choice)
         streamlit.dataframe(back_from_function)
 
-except URLError as e:
-    streamlit.error()
-
-
     streamlit.header("The fruit load list contains:")
     
     def get_fruit_load_list():
@@ -75,3 +71,5 @@ except URLError as e:
   #  streamlit.write('Thanks for adding ', add_my_fruit)
     #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice + add_my_fruit)
    # my_cur.execute("insert into fruit_load_list values ('from streamlit')")
+except URLError as e:
+    streamlit.error()
